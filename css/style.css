@@ -8,7 +8,6 @@ body {
     margin: 0;
     padding: 0;
     /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
-
     font-size: 2.6em;
 }
 
@@ -45,6 +44,7 @@ button {
     margin: 0.4rem;
     border: none;
     font-size: 0.4em;
+    cursor: grab;
     /* text-shadow: 0 0 0.125em rgba(255, 255, 255, 0.3), 0 0 0.45em hsl(317 100% 54%);
     box-shadow: inset 0 0 0.5em 0 rgb(255, 20, 189), 0 0 0.5em 0 rgb(255, 20, 189);    */
 }
