@@ -9,6 +9,8 @@ function getRandomNumber() {
 let colorBlocks = ['', '', '', '']
 
 function makeColors() {
+    // dzięki temu nie dzielą się nam te kolory w nieskończoność !
+    colorsContainer.innerHTML = ''
     const commonColor = getRandomNumber()
     console.log('commonColor ' + commonColor)
 
@@ -22,10 +24,11 @@ function makeColors() {
         const divElement = document.createElement('div')
         // in order to see what i am doing : textContent
         divElement.textContent = colorBlock
+        divElement.style.backgroundColor = colorBlock
         colorsContainer.append(divElement)
     })
 }
-
+makeColors()
 spawnButton.addEventListener('click', makeColors)
 document.addEventListener('keydown', makeColors)
 
