@@ -1,26 +1,26 @@
 #   🎨  Color generation  🎨
 
-## 🔮 What's it about?
+## 🖌 What's it about?
 
-Have You ever played in Packman? I have :D And It was such a fun things to almost (a bit of an exaggeration, I know) recrate it and thus practice JavaScript on its basics. 
-Love it! 🥰
+Creating the websites or aplicattions, I always need a proper set of colors. As inspiration, I can use super simple Color Generator :D
+It's my biggest JavaScript project that I've made so far. I'm so proud of it! ❤️  
 
-## 🔮 First look 
-This is Bob
+## 🖌 First look 
+An home page welcome us with fresh colors set,
 ![first page](./img/screen_1.png)
 
-and we moving Bob to the right...
+clicking a button or any key it generates a new set,
 ![secondt page](./img/screen_2.png)
 
-...and to the left, when he finally can find a cosy shelter behind the monitor. :)
+all over again. :)
 ![third page](./img/screen_3.png)
 
-## 🔮 Technologies
+## 🖌 Technologies
 
 + HTML 5
 + CSS 3
 + JavaScript
 
-## 🔮 Inspiration
+## 🖌 Inspiration
 This little project is part of an amazing Full Stack Developer Course created by  ♥ Ania Kubow ♥. Love this women, her sense of humor and ability to explain hard, code-things in a way that I finally understand. 🏆
 You can check this course [here](https://www.codewithania.com/about) and I absolutely encourage You to visit her [YouTube](https://www.youtube.com/@AniaKubow) channel. :)
