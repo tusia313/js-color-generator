@@ -59,10 +59,23 @@ header #spawn-button {
 }
 
 header #spawn-button:active {
-    color: hsl(400, 99%, 61%);
+    color: rgb(254, 188, 57);
     scroll-behavior: smooth;
 }
 
 section.colors-container {
-    color: yellowgreen;
+    display: flex;
+    height: 65vh;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+
+section.colors-container div {
+    width: 25%;
+    height: 100%;
+    background-color: yellowgreen;
+    border-radius: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

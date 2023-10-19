@@ -1,16 +1,22 @@
 const spawnButton = document.querySelector('#spawn-button')
 const colorsContainer = document.querySelector('.colors-container')
 
-let randomColor = []
-for (let i = 0; i < 3; i++) {
-    let randomNumber = Math.ceil(Math.random() * 255)
-    randomColor.unshift(randomNumber)
+function getRandomNumber() {
+    let randomNumber = Math.floor(Math.random() * 255)
+    return randomNumber
 }
 
-let colorBlocks = ['a', 'b', 'c', 'd']
+let colorBlocks = ['', '', '', '']
 
 function makeColors() {
-    console.log('I am making colors right now')
+    const commonColor = getRandomNumber()
+    console.log('commonColor ' + commonColor)
+
+    colorBlocks.forEach((_colorBlock, index) => {
+        // uwaga, nie ma nawiasów przed treścią ('rgb')!
+        colorBlocks[index] = 'rgb(' +  commonColor + ',' + getRandomNumber() + ',' + getRandomNumber() + ')'
+    })
+    console.log(colorBlocks)
 
     colorBlocks.forEach(colorBlock => {
         const divElement = document.createElement('div')
