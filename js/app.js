@@ -1,22 +1,25 @@
-const button = document.querySelector('button')
-const colorContainers = document.querySelectorAll('.color-container')
+const spawnButton = document.querySelector('#spawn-button')
+const colorsContainer = document.querySelector('.colors-container')
 
 let randomColor = []
-function createRgb(e) {
 for (let i = 0; i < 3; i++) {
     let randomNumber = Math.ceil(Math.random() * 255)
     randomColor.unshift(randomNumber)
 }
-return randomColor
+
+let colorBlocks = ['a', 'b', 'c', 'd']
+
+function makeColors() {
+    console.log('I am making colors right now')
+
+    colorBlocks.forEach(colorBlock => {
+        const divElement = document.createElement('div')
+        // in order to see what i am doing : textContent
+        divElement.textContent = colorBlock
+        colorsContainer.append(divElement)
+    })
 }
 
-// function changeNumbers(e) {
-//     console.log(e.key)
-//     if (e.key === 32) {
-
-//     }
-// }
-
-button.addEventListener('click', createRgb)
-document.addEventListener('keydown', createRgb)
+spawnButton.addEventListener('click', makeColors)
+document.addEventListener('keydown', makeColors)
 
