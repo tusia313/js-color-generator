@@ -75,7 +75,7 @@ section.colors-container {
 section.colors-container div {
     width: 24%;
     height: 100%;
-    background-color: yellowgreen;
+    background-color: magenta;
     border-radius: 2rem;
     display: flex;
     justify-content: center;
