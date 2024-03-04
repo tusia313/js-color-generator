@@ -64,20 +64,25 @@ header #spawn-button:active {
 }
 
 section.colors-container {
-    height: 65vh;
+    height: 73vh;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 1.5rem 0.5rem 0 0.5rem;
+
 }
 
 section.colors-container div {
-    width: 24%;
+    width: 25%;
     height: 100%;
-    background-color: magenta;
-    border-radius: 2rem;
+    border-radius: 1rem;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
+    /* From https://css.glass */
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(0.6px);
+    -webkit-backdrop-filter: blur(0.6px);
+    border: 1px solid rgba(255, 255, 255, 0.76);
 }
